@@ -271,25 +271,44 @@
 
 //OBJECTS AND PROPERTIES
 
+// var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false
+// }
+// console.log(john.firstName)
+// console.log(john['lastName'])
+// var x = 'birthYear'
+// console.log(john[x])
+
+// john.job = 'designer'
+// john['isMarried'] = true
+// console.log(john)
+
+// var jane = new Object()
+// jane.name = "Jane"
+// jane.birthYear = 1969
+// jane['lastName'] = 'Smith'
+// console.log(jane)
+
+
+//OBJECTS AND METHODS
 var john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1990,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
-    isMarried: false
+    isMarried: false,
+    calcAge: function(){
+        this.age = 2019 - this.birthYear
+    }
 }
-console.log(john.firstName)
-console.log(john['lastName'])
-var x = 'birthYear'
-console.log(john[x])
 
-john.job = 'designer'
-john['isMarried'] = true
+// console.log(john.calcAge(1990))
+// console.log(john.calcAge(john.birthYear))
+john.calcAge()
 console.log(john)
-
-var jane = new Object()
-jane.name = "Jane"
-jane.birthYear = 1969
-jane['lastName'] = 'Smith'
-console.log(jane)
