@@ -338,18 +338,18 @@ var john = ['John', 'Smith', 1990, 'designer', false, 'blue']
 
 //continue and break statememnts
 
-for(let i = 0; i < john.length; i++){
-    if (typeof john[i] !== 'string') continue
-    console.log(john[i])
-}
+// for(let i = 0; i < john.length; i++){
+//     if (typeof john[i] !== 'string') continue
+//     console.log(john[i])
+// }
 
-for(let i = 0; i < john.length; i++){
-    if (typeof john[i] !== 'string') break
-    console.log(john[i])
-}
+// for(let i = 0; i < john.length; i++){
+//     if (typeof john[i] !== 'string') break
+//     console.log(john[i])
+// }
 
-//Looping backwards
+// //Looping backwards
 
-for (let i = john.length - 1; i >= 0; i--){
-    console.log(john[i])
-}
+// for (let i = john.length - 1; i >= 0; i--){
+//     console.log(john[i])
+// }
