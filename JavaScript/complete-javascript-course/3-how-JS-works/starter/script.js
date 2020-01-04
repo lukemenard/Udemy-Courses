@@ -3,59 +3,59 @@
 
 //HOISTING IN PRACTICE
 
-calculateAge(1965)
+// calculateAge(1965)
 
-function calculateAge(year){
-    console.log(2016 - year)
-}
+// function calculateAge(year){
+//     console.log(2016 - year)
+// }
 
-// retirement(1956)
+// // retirement(1956)
 
-var retirement = function(year) {
-    console.log(65 - (2016) - year)
-}
+// var retirement = function(year) {
+//     console.log(65 - (2016) - year)
+// }
 
-console.log(age)
-var age = 23
-console.log(age)
+// console.log(age)
+// var age = 23
+// console.log(age)
 
-function foo(){
-    var age = 65
-    console.log(age)
-}
+// function foo(){
+//     var age = 65
+//     console.log(age)
+// }
 
-foo()
-console.log(age)
-
-
-
-
-
-
-
-
-
-
+// foo()
+// console.log(age)
 
 
 ///////////////////////////////////////
 // Lecture: Scoping
 
+//SCOPTING AND THE SCOPE CHAIN
 
 // First scoping example
 
-/*
+
 var a = 'Hello!';
 first();
+
 function first() {
     var b = 'Hi!';
     second();
+
     function second() {
         var c = 'Hey!';
+        third()
         console.log(a + b + c);
     }
 }
-*/
+
+function third(){
+    var d = 'John'
+    // console.log(c)
+    console.log(a+d)
+}
+
 
 
 
